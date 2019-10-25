@@ -1,0 +1,19 @@
+section {
+  width: 700px;
+  padding: 20px;
+  margin: 20px;
+  background: darken(white, 10);
+  border: 2px solid lighten(black, 10);
+}
+
+article {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+
+  &.active {
+    outline: 5px solid red;
+  }
+}
