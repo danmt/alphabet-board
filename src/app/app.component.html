@@ -6,8 +6,36 @@
   </p>
 </header>
 
-<main (click)="handleClick()">
-  <section appCharacterSelector [selected]="index$ | async">
+<main
+  (click)="handleClick()"
+  appSectionSelector
+  [selected]="activeSection$ | async"
+>
+  <section appCharacterSelector [selected]="activeIndex$ | async">
+    <article *ngFor="let letter of letterM[0]">
+      {{ letter | char }}
+    </article>
+  </section>
+
+  <section>
+    <article *ngFor="let letter of letterM[1]">
+      {{ letter | char }}
+    </article>
+  </section>
+
+  <section>
+    <article *ngFor="let letter of letterM[2]">
+      {{ letter | char }}
+    </article>
+  </section>
+
+  <section>
+    <article *ngFor="let letter of letterM[3]">
+      {{ letter | char }}
+    </article>
+  </section>
+
+  <!-- <section appCharacterSelector [selected]="index$ | async">
     <h2>Letters</h2>
     <p>Current letter to be selected: {{ letter$ | async }}</p>
     <article *ngFor="let letter of letters">
@@ -20,5 +48,5 @@
   <section>
     <h2>Word</h2>
     <p>{{ word$ | async }}</p>
-  </section>
+  </section> -->
 </main>

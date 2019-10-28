@@ -4,6 +4,10 @@ section {
   margin: 20px;
   background: darken(white, 10);
   border: 2px solid lighten(black, 10);
+
+  &.active {
+    outline: 5px solid red;
+  }
 }
 
 article {
