@@ -1,4 +1,4 @@
-<header>
+<header (click)="handleClick()">
   <h1>Alphabet Board</h1>
   <p>
     This is an alphabet board created to help people with cognitive problems to
@@ -7,18 +7,21 @@
 </header>
 
 <main (click)="handleClick()">
-  <section appCharacterSelector [selected]="index$ | async">
+  <section>
     <h2>Letters</h2>
-    <p>Current letter to be selected: {{ letter$ | async }}</p>
-    <article *ngFor="let letter of letters">
+    <p *ngIf="letter$ | async as letter"aria-live="assertive">
+      {{ letter === ' ' ? 'SPACE' : letter }} is currently selected.
+    </p>
+    <article 
+      *ngFor="let letter of letters; let i = index" 
+      [ngClass]="{active: (index$ | async) === i}">
       {{ letter | char }}
     </article>
-    <article>SPC</article>
-    <div class="character-selector"></div>
+    <article [ngClass]="{active: (letter$ | async) === ' '}">SPACE</article>
   </section>
 
   <section>
     <h2>Word</h2>
-    <p>{{ word$ | async }}</p>
+    <p aria-live="assertive">{{ word$ | async }}</p>
   </section>
 </main>

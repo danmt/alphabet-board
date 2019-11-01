@@ -12,7 +12,7 @@ export class AppComponent {
   letters = Array.from(Array(26), (_, index) => 65 + index);
   index$ = this.select.pipe(
     switchMap(() =>
-      timer(0, 1000).pipe(map(tick => tick % (this.letters.length + 1)))
+      timer(0, 2000).pipe(map(tick => tick % (this.letters.length + 1)))
     )
   );
 
