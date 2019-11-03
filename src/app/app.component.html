@@ -9,7 +9,7 @@
 <main (click)="handleClick()">
   <section>
     <h2>Letters</h2>
-    <p *ngIf="letter$ | async as letter"aria-live="assertive">
+    <p *ngIf="letter$ | async as letter" aria-live="assertive">
       {{ letter === ' ' ? 'SPACE' : letter }} is currently selected.
     </p>
     <article 
