@@ -4,7 +4,7 @@
 
 I've seen Breaking Bad so many times, like honestly at least 4 times. If you haven't seen it, be careful, it can make you stay in front of the TV for several days. In a nutshell, the show is about a high school teacher that gets diagnosed with cancer and decides to cook meth. Walter (the main character) goes through all kinds of crazy stuff, the first time you see it, you think that guy is so smart!! When you get to see it as many times as me you notice that he is not only smart but lucky.
 
-There's another character Hector Salamanca, although he seemed to had a severe stroke he has to communicate with nothing but a bell.
+There's another character Hector Salamanca, he seems to have had a severe stroke so he has to communicate with nothing but a bell.
 
 ![Hector salamanca in his wheelchair](https://thepracticaldev.s3.amazonaws.com/i/0royd04gxi8nrcieuhoe.png)
 
